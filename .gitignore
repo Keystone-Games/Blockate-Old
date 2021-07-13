@@ -170,3 +170,10 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Haxe
+*.hxproj
+hxformat.json
+
+# Lime
+export/

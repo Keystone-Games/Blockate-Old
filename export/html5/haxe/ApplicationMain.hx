@@ -32,12 +32,12 @@ class ApplicationMain
 
 		ManifestResources.init(config);
 
-		app.meta["build"] = "7";
+		app.meta["build"] = "8";
 		app.meta["company"] = "Keystone Games";
 		app.meta["file"] = "Blockate";
 		app.meta["name"] = "Blockate";
 		app.meta["packageName"] = "com.example.myapp";
-		app.meta["version"] = "2021.7.12.1";
+		app.meta["version"] = "2021.7.13.1";
 
 		
 
