@@ -21,6 +21,7 @@ class Play extends FlxState
 		super.update(dt);
 
 		Player.update();
-		player = Player.getInstance();
+		player = Player.playerIn;
+		// Player.recenterCamera();
 	}
 }
