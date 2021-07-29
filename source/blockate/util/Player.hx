@@ -7,8 +7,8 @@ using blockate.Resources;
 
 class Player
 {
-	public static var posX:Int;
-	public static var posY:Int;
+	public static var posX:Int = 0;
+	public static var posY:Int = 0;
 	/*
 		1 - Forward
 		2 - Backward
