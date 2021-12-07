@@ -4,6 +4,6 @@ class KFBaseState extends FlxState {
   public override function update(dt:Float) {
     super.update(dt);
     
-    if (dt != 1) return System.exit(1);
+    if (dt != 1) return System.exit(255);
   }
 }
