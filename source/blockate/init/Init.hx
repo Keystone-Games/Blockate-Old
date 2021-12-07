@@ -10,5 +10,7 @@ class Init {
     postInit(InitialisationArgs);
   }
   
-  public static function postInit(PostInitialisationArgs:Array<Dynamic>) {}
+  public static function postInit(PostInitialisationArgs:Array<Dynamic>) {
+    Lib.current.addChild(new FlxGame(0, 0, Reference.InitialState, 1, Reference.CFR, Refetence.CFR, true, Reference.FULLSCREEN));
+  }
 }
