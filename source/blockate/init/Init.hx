@@ -2,6 +2,7 @@ package blockate.init;
 
 class Init {
   public static function preInit(PreInitialisationArgs:Array<Dynamic>) {
+    trace("Pre-initialising with args: " + PreInitialisationArgs);
     init(PreInitialisationArgs);
   }
   
