@@ -4,7 +4,7 @@ class Menu extends KFBaseState {
   public var backgroundImage:FlxSprite;
   public var mainText:FlxText;
   public var htp:FlxButton;
-  public var playButton:FlxSprite;
+  public var playButton:FlxButton;
   
   public override function create() {
     super.create();
