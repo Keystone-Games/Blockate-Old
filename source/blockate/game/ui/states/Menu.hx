@@ -38,7 +38,7 @@ class Menu extends KFBaseState
 
 	public static function playButtonClick():Void
 	{
-		FlxG.switchState(null);
+		FlxG.switchState(new MenuBridge());
 		return;
 	}
 }
