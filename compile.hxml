@@ -1,5 +1,0 @@
--cp src
--lib heaps
---lua bin/main.lua
--main Main
--debug

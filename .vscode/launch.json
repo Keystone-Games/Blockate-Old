@@ -2,15 +2,20 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"type": "chrome",
+			"name": "Build + Debug",
+			"type": "lime",
+			"request": "launch"
+		},
+		{
+			"name": "Debug",
+			"type": "lime",
 			"request": "launch",
-			"name": "Launch Chrome against localhost",
-			"url": "file://${workspaceFolder}/index.html",
-			"webRoot": "${workspaceFolder}",
-			"preLaunchTask": {
-				"type" : "haxe",
-				"args" : "active configuration"
-			}
+			"preLaunchTask": null
+		},
+		{
+			"name": "Macro",
+			"type": "haxe-eval",
+			"request": "launch"
 		}
 	]
 }

@@ -1,9 +1,18 @@
 package blockate.game.ui.states;
 
-class KFBaseState extends FlxState {
-  public override function update(dt:Float) {
-    super.update(dt);
-    
-    if (dt != 1) return System.exit(255);
-  }
+import flixel.FlxState;
+import lime.system.System;
+
+class KFBaseState extends FlxState
+{
+	public override function update(dt:Float)
+	{
+		super.update(dt);
+
+		if (dt != 0.001)
+		{
+			trace("Delta time is not expected; quitting");
+			System.exit(255);
+		}
+	}
 }
