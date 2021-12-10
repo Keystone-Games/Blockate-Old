@@ -18,9 +18,28 @@ class MenuBridge extends KFBaseState
 		{
 			worldListButtonClick();
 		});
-		worldListButton.screenCenter(X);
+		worldListButton.screenCenter(XY);
 		worldListButton.scale.set(2, 2);
 		add(worldListButton);
+		
+		optionsMenuButton = new FlxButton(0, 0, "Options", function()
+		{
+			optionsMenuButtonClick();
+		});
+		optionsMenuButton.screenCenter(XY);
+		optionsMenuButton.scale.set(2,2);
+		add(optionsMenuButton);
+		
+		exitButton = new FlxButton(0, 0, "Exit", function()
+		{
+			exitButtonClick();
+		});
+		exitButton.screenCenter(XY);
+		exitButton.scale.set(2 ,2);
+		add(exitButton);
+		
+		worldListButton.y = worldListButton.y + (2 * worldListButton.height);
+		exitButton.y = exitButton.y + (2 * exitButton.height);
 	}
 
 	public override function update(dt:Float)
@@ -31,5 +50,11 @@ class MenuBridge extends KFBaseState
 	private static function worldListButtonClick()
 	{
 		FlxG.switchState(new WorldList());
+	}
+	private static function optionsMenuButtonClick() {
+		FlxG.switchState(null);
+	}
+	private static function exitButtonClick() {
+		System.exit(0);
 	}
 }
