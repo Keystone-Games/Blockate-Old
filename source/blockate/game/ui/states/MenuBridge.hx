@@ -52,7 +52,7 @@ class MenuBridge extends KFBaseState
 		FlxG.switchState(new WorldList());
 	}
 	private static function optionsMenuButtonClick() {
-		FlxG.switchState(null);
+		FlxG.switchState(new OptionsMenu());
 	}
 	private static function exitButtonClick() {
 		System.exit(0);
