@@ -11,4 +11,10 @@ class WorldList extends KFBaseState
 	{
 		super.update(dt);
 	}
+
+	public function new()
+	{
+		super();
+		trace(WorldList);
+	}
 }

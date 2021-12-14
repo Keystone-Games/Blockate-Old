@@ -41,4 +41,10 @@ class Menu extends KFBaseState
 		FlxG.switchState(new MenuBridge());
 		return;
 	}
+
+	public function new()
+	{
+		super();
+		trace(Menu);
+	}
 }

@@ -15,4 +15,10 @@ class KFBaseState extends FlxState
 			System.exit(255);
 		}
 	}
+
+	public function new()
+	{
+		super();
+		trace(KFBaseState);
+	}
 }

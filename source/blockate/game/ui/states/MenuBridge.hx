@@ -3,6 +3,7 @@ package blockate.game.ui.states;
 import blockate.game.ui.states.world.WorldList;
 import flixel.FlxG;
 import flixel.ui.FlxButton;
+import lime.system.System;
 
 class MenuBridge extends KFBaseState
 {
@@ -21,23 +22,23 @@ class MenuBridge extends KFBaseState
 		worldListButton.screenCenter(XY);
 		worldListButton.scale.set(2, 2);
 		add(worldListButton);
-		
+
 		optionsMenuButton = new FlxButton(0, 0, "Options", function()
 		{
 			optionsMenuButtonClick();
 		});
 		optionsMenuButton.screenCenter(XY);
-		optionsMenuButton.scale.set(2,2);
+		optionsMenuButton.scale.set(2, 2);
 		add(optionsMenuButton);
-		
+
 		exitButton = new FlxButton(0, 0, "Exit", function()
 		{
 			exitButtonClick();
 		});
 		exitButton.screenCenter(XY);
-		exitButton.scale.set(2 ,2);
+		exitButton.scale.set(2, 2);
 		add(exitButton);
-		
+
 		worldListButton.y = worldListButton.y + (2 * worldListButton.height);
 		exitButton.y = exitButton.y + (2 * exitButton.height);
 	}
@@ -51,10 +52,20 @@ class MenuBridge extends KFBaseState
 	{
 		FlxG.switchState(new WorldList());
 	}
-	private static function optionsMenuButtonClick() {
+
+	private static function optionsMenuButtonClick()
+	{
 		FlxG.switchState(new OptionsMenu());
 	}
-	private static function exitButtonClick() {
+
+	private static function exitButtonClick()
+	{
 		System.exit(0);
+	}
+
+	public function new()
+	{
+		super();
+		trace(MenuBridge);
 	}
 }
