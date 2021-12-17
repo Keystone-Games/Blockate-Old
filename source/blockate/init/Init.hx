@@ -7,7 +7,8 @@ class Init
 {
 	public static function preInit(PreInitialisationArgs:Array<Dynamic>)
 	{
-		trace("Pre-initialising with args: " + PreInitialisationArgs);
+		//trace("Pre-initialising with args: " + PreInitialisationArgs);
+		Logger.simpleLog("Pre-initialising with args: " + PreInitialisationArgs);
 		init(PreInitialisationArgs);
 	}
 
