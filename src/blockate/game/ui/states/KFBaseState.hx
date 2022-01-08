@@ -11,7 +11,7 @@ class KFBaseState extends FlxState
 
 		if (dt != 0.001)
 		{
-			trace("Delta time is not expected; quitting");
+			Logger.simpleLog("Delta time is not expected; quitting");
 			System.exit(255);
 		}
 	}
@@ -19,6 +19,6 @@ class KFBaseState extends FlxState
 	public function new()
 	{
 		super();
-		trace(KFBaseState);
+		Logger.simpleLog(KFBaseState);
 	}
 }

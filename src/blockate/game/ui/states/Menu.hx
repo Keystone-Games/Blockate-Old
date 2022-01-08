@@ -45,6 +45,6 @@ class Menu extends KFBaseState
 	public function new()
 	{
 		super();
-		trace(Menu);
+		Logger.simpleLog(Menu);
 	}
 }

@@ -66,6 +66,6 @@ class MenuBridge extends KFBaseState
 	public function new()
 	{
 		super();
-		trace(MenuBridge);
+		Logger.simpleLog(MenuBridge);
 	}
 }

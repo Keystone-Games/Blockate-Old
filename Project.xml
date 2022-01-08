@@ -28,8 +28,8 @@
 
 	<!-- _____________________________ Path Settings ____________________________ -->
 
-	<source path="source" />
-	<assets path="resources/assets" rename="assets" />
+	<source path="src" />
+	<assets path="res/assets" rename="assets" />
 
 	<!-- _______________________________ Libraries ______________________________ -->
 

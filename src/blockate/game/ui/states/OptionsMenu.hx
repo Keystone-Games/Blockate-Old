@@ -35,6 +35,6 @@ class OptionsMenu extends MenuBridge
 	public function new()
 	{
 		super();
-		trace(OptionsMenu);
+		Logger.simpleLog(OptionsMenu);
 	}
 }
