@@ -36,7 +36,9 @@
 	<haxelib name="flixel" />
 
 	<haxelib name="random" />
-	
+
+	<haxelib name="Console.hx" />
+
 	<!--<haxelib name="kglog" />-->
 
 	<!--In case you want to use the addons package-->

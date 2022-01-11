@@ -1,5 +1,6 @@
 package kglog;
 
+import Console;
 import haxe.io.Path;
 
 class Logger
@@ -33,7 +34,7 @@ class Logger
 			File.saveContent(p, sTime);
 			File.saveContent(p, ""); */
 		// File.saveContent(p, "Log " + sDate + " at " + sTime + "\n");
-		sessionLog = sessionLog + "Log " + sDate + " at " + sTime + "\n");
+		sessionLog = sessionLog + "Log " + sDate + " at " + sTime + "\n";
 	}
 
 	/**
@@ -61,6 +62,6 @@ class Logger
 
 		var p = Path.join([logDir, logFile]);
 		// File.saveContent(p, "Error at " + Location + ": " + Error);
-		sessionLog = sessionLog + "Error at " + Location + ": " + Error);
+		sessionLog = sessionLog + "Error at " + Location + ": " + Error;
 	}
 }
