@@ -15,8 +15,7 @@
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
-    <class path="source\blockate" />
-    <class path="source\kglog" />
+    <class path="." />
   </classpaths>
   <!-- Build options -->
   <build>
