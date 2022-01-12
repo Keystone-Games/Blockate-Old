@@ -38,7 +38,7 @@
 	<haxelib name="random" />
 
 	<haxelib name="Console.hx" />
-	
+
 	<haxelib name="console-out" />
 
 	<!--<haxelib name="kglog" />-->
@@ -87,5 +87,5 @@
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
-	<icon path="assets/icon.png" />
+	<icon path="res/assets/eneity_playerDefault1.png" />
 </project>
