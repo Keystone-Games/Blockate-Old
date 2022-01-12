@@ -1,5 +1,7 @@
 package blockate.game.ui.states.world;
 
+import kglog.Logger;
+
 class WorldList extends KFBaseState
 {
 	public override function create()
@@ -15,6 +17,6 @@ class WorldList extends KFBaseState
 	public function new()
 	{
 		super();
-		trace(WorldList);
+		Logger.simpleLog(WorldList);
 	}
 }

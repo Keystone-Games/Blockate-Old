@@ -1,7 +1,7 @@
 package game.ui.states.multiplayer;
 
-import kglog.Logger;
 import flixel.FlxState;
+import kglog.Logger;
 
 /**
  * ...
@@ -9,9 +9,10 @@ import flixel.FlxState;
  */
 class ServerList extends FlxState
 {
-
 	public function new()
 	{
+		super();
+
 		Logger.simpleLog(ServerList);
 	}
 
@@ -22,7 +23,6 @@ class ServerList extends FlxState
 
 	public override function update(dt:Float)
 	{
-		super.update();
+		super.update(dt);
 	}
-
 }

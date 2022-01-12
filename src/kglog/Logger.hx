@@ -42,7 +42,7 @@ class Logger
 	 * and to the console.
 	 * @param  Text  String of text to log.
 	 */
-	public static function simpleLog(Text:String):Void
+	public static function simpleLog(Text:Any):Void
 	{
 		Console.log(Text);
 
@@ -56,7 +56,7 @@ class Logger
 	 * @param  Error     The error text to log.
 	 * @param  Location  Class name and path of error location
 	 */
-	public static function error(Error:String, Location:String)
+	public static function error(Error:Any, Location:Any)
 	{
 		Console.error("Error: " + Error + " at " + Location);
 

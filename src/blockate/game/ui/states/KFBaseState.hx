@@ -1,6 +1,7 @@
 package blockate.game.ui.states;
 
 import flixel.FlxState;
+import kglog.Logger;
 import lime.system.System;
 
 class KFBaseState extends FlxState
