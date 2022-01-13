@@ -6,10 +6,25 @@ import openfl.Lib;
 
 class Init
 {
+	#if sys
+	public static var args = Sys.args();
+	#else
+	public static var args = ["CLI arguments not available"];
+	#end
+
 	public static function preInit(PreInitialisationArgs:Array<Dynamic>)
 	{
-		//trace("Pre-initialising with args: " + PreInitialisationArgs);
+		// trace("Pre-initialising with args: " + PreInitialisationArgs);
 		Logger.simpleLog("Pre-initialising with args: " + PreInitialisationArgs);
+		if (Init.args[0] == "CLI arguments not available")
+		{
+			Logger.error(Init.args[0], "blockate.init.Init");
+		}
+		else
+		{
+			Logger.simpleLog('Program starting with CLI args $args');
+		}
+
 		init(PreInitialisationArgs);
 	}
 

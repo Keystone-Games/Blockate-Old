@@ -44,7 +44,9 @@ class Logger
 	 */
 	public static function simpleLog(Text:Any):Void
 	{
-		Console.log(Text);
+		#if sys
+		Sys.println(Text);
+		#end
 
 		var p = Path.join([logDir, logFile]);
 		// File.saveContent(p, Text);

@@ -8,15 +8,20 @@ class Main
 	static public function main():Void
 	{
 		trace("Starting KGLog " + Reference.VERSION);
+		#if sys
 		init();
+		#end
 	}
 
+	#if sys
 	public static function init()
 	{
 		Logger.config(System.applicationStorageDirectory);
 		postInit();
 	}
+	#end
 
+	#if sys
 	public static function postInit()
 	{
 		Console.log("<red>  _  __    ___     _               __ _  </red>");
@@ -25,7 +30,9 @@ class Main
 		Console.log("<green> |_|\\_\\   \\___|   |____|  \\___/   |___/  </green>");
 		trace("KGLog version " + Reference.VERSION + " has been loaded");
 	}
+	#end
 
+	#if sys
 	public static function end()
 	{
 		trace("Stopping KGLog");
@@ -35,4 +42,5 @@ class Main
 
 		trace("Logs saved");
 	}
+	#end
 }
