@@ -1,11 +1,20 @@
 package blockate.game.ui.states;
 
+import blockate.game.keybinds.Keybinds;
+import flixel.FlxG;
 import flixel.FlxState;
 import kglog.Logger;
 import lime.system.System;
 
 class KFBaseState extends FlxState
 {
+	public override function create()
+	{
+		if (Reference.debug)
+		{
+			FlxG.fullscreen = false;
+		}
+	}
 	public override function update(dt:Float)
 	{
 		super.update(dt);
@@ -15,6 +24,8 @@ class KFBaseState extends FlxState
 			Logger.simpleLog("Delta time is not expected; quitting");
 			System.exit(255);
 		}
+		
+		Keybinds.check();
 	}
 
 	public function new()

@@ -21,7 +21,8 @@
 	<window if="html5" resizable="false" />
 
 	<!--Desktop-specific-->
-	<window if="desktop" orientation="landscape" fullscreen="true" resizable="false" />
+	<window if="desktop" orientation="landscape" fullscreen="true" resizable="true" />
+	<window if="-debug" fullscreen="false" />
 
 	<!--Mobile-specific-->
 	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" />

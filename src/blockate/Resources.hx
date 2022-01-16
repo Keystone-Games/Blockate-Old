@@ -1,4 +1,4 @@
 package blockate;
 
-@:build(flixel.system.FlxAssets.buildFileReferences("resources/assets", true))
+@:build(flixel.system.FlxAssets.buildFileReferences("res/assets", true))
 class Resources {}

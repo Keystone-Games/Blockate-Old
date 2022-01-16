@@ -1,7 +1,7 @@
 @echo off
 
 if %1==testbuild (
-    lime test cpp
+    lime test cpp -debug
 )
 
 if %1==stbuild (

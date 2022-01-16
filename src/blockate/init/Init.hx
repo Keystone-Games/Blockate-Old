@@ -25,11 +25,26 @@ class Init
 			Logger.simpleLog('Program starting with CLI args $args');
 		}
 
+		for (i => v in args)
+		{
+			trace(i, v);
+
+			if (v == "-debug")
+			{
+				Reference.debug = true;
+
+				break;
+			}
+		}
+
 		init(PreInitialisationArgs);
 	}
 
 	public static function init(InitialisationArgs:Array<Dynamic>)
 	{
+		if (Reference.debug) {
+			Reference.FULLSCREEN = false;
+		}
 		postInit(InitialisationArgs);
 	}
 
@@ -38,12 +53,12 @@ class Init
 		Logger.simpleLog("Adding child");
 		Lib.current.addChild(new FlxGame(0, 0, Reference.InitialState, 1, Reference.CFR, Reference.CFR, true, Reference.FULLSCREEN));
 		Logger.simpleLog("Added child with arguments: GameWidth:0, GameHeight:0, InitialState:"
-			+ Reference.InitialState
-			+ ", Zoom:1, UpdateFramerate:"
-			+ Reference.CFR
-			+ ", DrawFramerate:"
-			+ Reference.CFR
-			+ ", SkipSplash:true, StateFullscreen:"
-			+ Reference.FULLSCREEN);
+						 + Reference.InitialState
+						 + ", Zoom:1, UpdateFramerate:"
+						 + Reference.CFR
+						 + ", DrawFramerate:"
+						 + Reference.CFR
+						 + ", SkipSplash:true, StateFullscreen:"
+						 + Reference.FULLSCREEN);
 	}
 }

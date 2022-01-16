@@ -12,5 +12,7 @@ class Reference
 
 	public static final CFR:Int = 1000;
 
-	public static final FULLSCREEN:Bool = true;
+	public static var FULLSCREEN:Bool = true;
+	
+	public static var debug:Bool = false;
 }

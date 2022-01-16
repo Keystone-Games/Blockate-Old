@@ -1,1 +1,8 @@
+-cp src/
+-main blockate.Main
+-lib lime
+-lib openfl
+-lib flixel
+-lib console-out
+-lib Console.hx
 --cmd make testbuild

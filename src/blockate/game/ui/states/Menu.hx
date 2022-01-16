@@ -18,7 +18,7 @@ class Menu extends KFBaseState
 	{
 		super.create();
 
-		mainText = new FlxText(0, 0, 0, "Blockate").setFormat(null, 64, FlxColor.WHITE, CENTER);
+		mainText = new FlxText(0, 0, 0, "Blockate").setFormat("res/assets/fonts/EightBitDragon.ttf", 64, FlxColor.WHITE, CENTER);
 		mainText.screenCenter(X);
 		add(mainText);
 
