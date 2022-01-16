@@ -23,7 +23,7 @@ class WorldList extends KFBaseState
 		add(title);
 		
 		box = new FlxSprite();
-		box.makeGraphic(Math.round(FlxG.width * 0.75), FlxG.height - Math.round(title.height), FlxColor.WHITE);
+		box.makeGraphic(Math.round(FlxG.width * 0.75), FlxG.height - Math.round(title.height), FlxColor.fromString("#111111"));
 		box.screenCenter(X);
 		box.y = Math.round(title.height);
 		add(box);
