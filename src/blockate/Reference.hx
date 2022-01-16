@@ -1,6 +1,6 @@
 package blockate;
 
-import blockate.game.ui.states.Menu;
+import blockate.game.ui.states.menu.Menu;
 
 typedef InitialState = Menu;
 

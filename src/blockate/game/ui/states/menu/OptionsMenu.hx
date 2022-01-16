@@ -1,5 +1,6 @@
-package blockate.game.ui.states;
+package blockate.game.ui.states.menu;
 
+import blockate.game.ui.states.menu.MenuBridge;
 import flixel.FlxSprite;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;

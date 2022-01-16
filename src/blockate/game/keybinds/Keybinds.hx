@@ -13,12 +13,21 @@ class Keybinds
 		Fullscreen.trigger();
 	}
 
-	public static function check()
+	public static function checkAll()
 	{
 		Fullscreen.check();
 	}
+	
+	public static function checkBasic()
+	{
+		Fullscreen.check();
+	}
+	
+	public static function checkMenuSpecific()
+	{
+	}
 
-	public static function checkR()
+	public static function checkAllR()
 	{
 		return
 		{

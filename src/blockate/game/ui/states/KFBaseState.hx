@@ -25,7 +25,7 @@ class KFBaseState extends FlxState
 			System.exit(255);
 		}
 		
-		Keybinds.check();
+		Keybinds.checkBasic();
 	}
 
 	public function new()

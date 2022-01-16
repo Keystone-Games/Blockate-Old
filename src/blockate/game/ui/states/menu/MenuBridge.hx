@@ -1,4 +1,4 @@
-package blockate.game.ui.states;
+package blockate.game.ui.states.menu;
 
 import blockate.game.ui.states.world.WorldList;
 import flixel.FlxG;

@@ -1,5 +1,6 @@
 package blockate.game.ui.states.world;
 
+import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
@@ -22,8 +23,9 @@ class WorldList extends KFBaseState
 		add(title);
 		
 		box = new FlxSprite();
-		box.makeGraphic(960, 720 - Math.round(title.height), FlxColor.WHITE);
+		box.makeGraphic(Math.round(FlxG.width * 0.75), FlxG.height - Math.round(title.height), FlxColor.WHITE);
 		box.screenCenter(X);
+		box.y = Math.round(title.height);
 		add(box);
 	}
 
