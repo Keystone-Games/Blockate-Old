@@ -21,6 +21,7 @@ class Keybinds
 	public static function checkBasic()
 	{
 		Fullscreen.check();
+		Exit.check();
 	}
 	
 	public static function checkMenuSpecific()

@@ -63,6 +63,7 @@ class MenuBridge extends KFBaseState
 
 	private static function exitButtonClick()
 	{
+		Logger.simpleLog("Quitting");
 		System.exit(0);
 	}
 

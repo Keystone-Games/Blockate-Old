@@ -1,6 +1,7 @@
 package blockate.game.keybinds;
 
 import flixel.FlxG;
+import kglog.Logger;
 
 /**
  * ...
@@ -14,12 +15,16 @@ class Fullscreen
 	}
 
 	public static function trigger() {
+		Logger.simpleLog("Toggle fullscreen");
+		
 		if (FlxG.fullscreen) {
 			Reference.FULLSCREEN = false;
 			FlxG.fullscreen = false;
+			Logger.simpleLog("Fullscreen is now off");
 		} else {
 			Reference.FULLSCREEN = true;
 			FlxG.fullscreen = true;
+			Logger.simpleLog("Fullscreen is now on");
 		}
 	}
 

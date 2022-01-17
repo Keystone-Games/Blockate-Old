@@ -24,10 +24,10 @@ class Main
 	#if sys
 	public static function postInit()
 	{
-		Console.log("<red>  _  __    ___     _               __ _  </red>");
-		Console.log("<orange> | |/ /   / __|   | |      ___    / _` | </orange>");
-		Console.log("<yellow> | ' <   | (_ |   | |__   / _ \\   \\__, | </yellow>");
-		Console.log("<green> |_|\\_\\   \\___|   |____|  \\___/   |___/  </green>");
+		Sys.println("  _  __    ___     _               __ _  ");
+		Sys.println(" | |/ /   / __|   | |      ___    / _` | ");
+		Sys.println(" | ' <   | (_ |   | |__   / _ \\   \\__, | ");
+		Sys.println(" |_|\\_\\   \\___|   |____|  \\___/   |___/  ");
 		trace("KGLog version " + Reference.VERSION + " has been loaded");
 	}
 	#end
