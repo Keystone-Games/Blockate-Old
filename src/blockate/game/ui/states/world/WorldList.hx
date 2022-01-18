@@ -67,6 +67,11 @@ class WorldList extends KFBaseState
 		box.screenCenter(X);
 		box.y = Math.round(title.height);
 		add(box);
+		
+		// world slots
+		slot1Box = new FlxSprite();
+		slot1Box.makeGraphic(box.width, box.height / 8, FlxColor.fromString("#0F0F0F");
+		slot1Box.screenCenter(X);
 	}
 
 	public override function update(dt)
