@@ -72,6 +72,7 @@ class WorldList extends KFBaseState
 		slot1Box = new FlxSprite();
 		slot1Box.makeGraphic(box.width, box.height / 8, FlxColor.fromString("#0F0F0F");
 		slot1Box.screenCenter(X);
+		slot1Label = new FlxText(0, 0, 0, "Slot 1 (empty)").setFormat("res/assets/fonts/EightBitDragon.ttf", 32);
 	}
 
 	public override function update(dt)
