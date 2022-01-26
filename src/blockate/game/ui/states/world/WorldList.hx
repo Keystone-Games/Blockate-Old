@@ -128,6 +128,27 @@ class WorldList extends KFBaseState
 	}
 	
 	public static function slot1play() {
-		// work on this later
+		WorldManager.loadSlot(0);
+	}
+	public static function slot2play() {
+		WorldManager.loadSlot(1);
+	}
+	public static function slot3play() {
+		WorldManager.loadSlot(2);
+	}
+	public static function slot4play() {
+		WorldManager.loadSlot(3);
+	}
+	public static function slot5play() {
+		WorldManager.loadSlot(4);
+	}
+	public static function slot6play() {
+		WorldManager.loadSlot(5);
+	}
+	public static function slot7play() {
+		WorldManager.loadSlot(6);
+	}
+	public static function slot8play() {
+		WorldManager.loadSlot(7);
 	}
 }
