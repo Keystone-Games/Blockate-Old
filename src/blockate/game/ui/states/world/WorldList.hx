@@ -3,6 +3,7 @@ package blockate.game.ui.states.world;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.text.FlxText;
+import flixel.ui.FlxButton;
 import flixel.util.FlxColor;
 import kglog.Logger;
 
@@ -74,11 +75,30 @@ class WorldList extends KFBaseState
 		slot1Box.screenCenter(X);
 		slot1Box.y = box.y;
 		slot1Label = new FlxText(0, 0, 0, "Slot 1 (empty)").setFormat("res/assets/fonts/EightBitDragon.ttf", 32);
-		slot1Label.setPosition(slot1Box.x, slot1Box.y + (slot1Box.height / 2));
+		slot1Label.setPosition(slot1Box.x, slot1Box.y);
 		slot1Size = new FlxText(0, 0, 0, "Size: 0 MB").setFormat("res/assets/fonts/EightBitDragon.ttf", 24);
-		slot1Size.setPosition(slot1Box.x, slot1Label.y + slot1Size.height);
+		slot1Size.setPosition(slot1Box.x, slot1Box.y + (slot1Box.height - slot1Size.height));
+		slot1Button = new FlxButton(0, 0, "Load", function() {slot1play(); });
+		slot1Button.setPosition(slot1Box.x + (slot1Box.width - slot1Size.width), slot1Box.x);
 		add(slot1Box);
 		add(slot1Label);
+		add(slot1Size);
+		add(slot1Button);
+		
+		slot2Box = new FlxSprite();
+		slot2Box.makeGraphic(Math.round(box.width), Math.round(box.height / 8), FlxColor.fromString("#0F0F0F"));
+		slot2Box.screenCenter(X);
+		slot2Box.y = box.y;
+		slot2Label = new FlxText(0, 0, 0, "Slot 1 (empty)").setFormat("res/assets/fonts/EightBitDragon.ttf", 32);
+		slot2Label.setPosition(slot1Box.x, slot1Box.y);
+		slot2Size = new FlxText(0, 0, 0, "Size: 0 MB").setFormat("res/assets/fonts/EightBitDragon.ttf", 24);
+		slot2Size.setPosition(slot1Box.x, slot1Box.y + (slot1Box.height - slot1Size.height));
+		slot2Button = new FlxButton(0, 0, "Load", function() {slot1play(); });
+		slot2Button.setPosition(slot1Box.x + (slot1Box.width - slot1Size.width), slot1Box.x);
+		add(slot2Box);
+		add(slot2Label);
+		add(slot2Size);
+		add(slot2Button);
 	}
 
 	public override function update(dt)
@@ -90,5 +110,9 @@ class WorldList extends KFBaseState
 	{
 		super();
 		Logger.simpleLog(WorldList);
+	}
+	
+	public static function slot1play() {
+		// work on this later
 	}
 }
