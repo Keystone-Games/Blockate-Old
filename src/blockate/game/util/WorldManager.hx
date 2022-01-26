@@ -1,4 +1,5 @@
 package blockate.game.util;
+import kglog.Logger;
 
 /**
  * ...
@@ -12,8 +13,8 @@ class WorldManager
 		
 	}
 	
-	public static function load(slot:Int) {
-		
+	public static function loadSlot(slot:Int) {
+		Logger.simpleLog("Loading world slot " + slot);
 	}
 	
 }
