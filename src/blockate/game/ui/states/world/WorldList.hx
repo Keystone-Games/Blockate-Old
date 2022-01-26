@@ -1,5 +1,6 @@
 package blockate.game.ui.states.world;
 
+import blockate.game.util.WorldManager;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.text.FlxText;
@@ -68,7 +69,7 @@ class WorldList extends KFBaseState
 		box.screenCenter(X);
 		box.y = Math.round(title.height);
 		add(box);
-		
+
 		// world slots
 		slot1Box = new FlxSprite();
 		slot1Box.makeGraphic(Math.round(box.width), Math.round(box.height / 8), FlxColor.fromString("#0F0F0F"));
@@ -84,7 +85,7 @@ class WorldList extends KFBaseState
 		add(slot1Label);
 		add(slot1Size);
 		add(slot1Button);
-		
+
 		slot2Box = new FlxSprite();
 		slot2Box.makeGraphic(Math.round(box.width), Math.round(box.height / 8), FlxColor.fromString("#0F0F0F"));
 		slot2Box.screenCenter(X);
@@ -99,7 +100,7 @@ class WorldList extends KFBaseState
 		add(slot2Label);
 		add(slot2Size);
 		add(slot2Button);
-		
+
 		slot3Box = new FlxSprite();
 		slot3Box.makeGraphic(Math.round(box.width), Math.round(box.height / 8), FlxColor.fromString("#0F0F0F"));
 		slot3Box.screenCenter(X);
@@ -126,29 +127,37 @@ class WorldList extends KFBaseState
 		super();
 		Logger.simpleLog(WorldList);
 	}
-	
-	public static function slot1play() {
+
+	public static function slot1play()
+	{
 		WorldManager.loadSlot(0);
 	}
-	public static function slot2play() {
+	public static function slot2play()
+	{
 		WorldManager.loadSlot(1);
 	}
-	public static function slot3play() {
+	public static function slot3play()
+	{
 		WorldManager.loadSlot(2);
 	}
-	public static function slot4play() {
+	public static function slot4play()
+	{
 		WorldManager.loadSlot(3);
 	}
-	public static function slot5play() {
+	public static function slot5play()
+	{
 		WorldManager.loadSlot(4);
 	}
-	public static function slot6play() {
+	public static function slot6play()
+	{
 		WorldManager.loadSlot(5);
 	}
-	public static function slot7play() {
+	public static function slot7play()
+	{
 		WorldManager.loadSlot(6);
 	}
-	public static function slot8play() {
+	public static function slot8play()
+	{
 		WorldManager.loadSlot(7);
 	}
 }
