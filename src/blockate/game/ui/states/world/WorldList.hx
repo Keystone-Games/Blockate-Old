@@ -80,7 +80,7 @@ class WorldList extends KFBaseState
 		slot1Size = new FlxText(0, 0, 0, "Size: 0 MB").setFormat("res/assets/fonts/EightBitDragon.ttf", 24);
 		slot1Size.setPosition(slot1Box.x, slot1Box.y + (slot1Box.height - slot1Size.height));
 		slot1Button = new FlxButton(0, 0, "Load", function() {slot1play(); });
-		slot1Button.setPosition(slot1Box.x + (slot1Box.width - slot1Size.width), slot1Box.x);
+		slot1Button.setPosition(slot1Box.x + (slot1Box.width - slot1Size.width), slot1Box.y);
 		add(slot1Box);
 		add(slot1Label);
 		add(slot1Size);
@@ -94,8 +94,8 @@ class WorldList extends KFBaseState
 		slot2Label.setPosition(slot2Box.x, slot2Box.y);
 		slot2Size = new FlxText(0, 0, 0, "Size: 0 MB").setFormat("res/assets/fonts/EightBitDragon.ttf", 24);
 		slot2Size.setPosition(slot2Box.x, slot2Box.y + (slot2Box.height - slot2Size.height));
-		slot2Button = new FlxButton(0, 0, "Load", function() {slot1play(); });
-		slot2Button.setPosition(slot2Box.x + (slot2Box.width - slot2Size.width), slot2Box.x);
+		slot2Button = new FlxButton(0, 0, "Load", function() {slot2play(); });
+		slot2Button.setPosition(slot2Box.x + (slot2Box.width - slot2Size.width), slot2Box.y);
 		add(slot2Box);
 		add(slot2Label);
 		add(slot2Size);
@@ -109,8 +109,8 @@ class WorldList extends KFBaseState
 		slot3Label.setPosition(slot3Box.x, slot3Box.y);
 		slot3Size = new FlxText(0, 0, 0, "Size: 0 MB").setFormat("res/assets/fonts/EightBitDragon.ttf", 24);
 		slot3Size.setPosition(slot3Box.x, slot3Box.y + (slot3Box.height - slot3Size.height));
-		slot3Button = new FlxButton(0, 0, "Load", function() {slot1play(); });
-		slot3Button.setPosition(slot3Box.x + (slot3Box.width - slot3Size.width), slot3Box.x);
+		slot3Button = new FlxButton(0, 0, "Load", function() {slot3play(); });
+		slot3Button.setPosition(slot3Box.x + (slot3Box.width - slot3Size.width), slot3Box.y);
 		add(slot3Box);
 		add(slot3Label);
 		add(slot3Size);
