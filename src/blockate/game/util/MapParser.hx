@@ -27,5 +27,7 @@ class MapParser
 
 		return json;
 	}
+	
+	public static function getBlock(x:Int, y:Int, path:String) {}
 
 }
