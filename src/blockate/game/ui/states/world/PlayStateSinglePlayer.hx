@@ -3,6 +3,7 @@ package blockate.game.ui.states.world;
 import blockate.game.util.MapParser;
 import blockate.game.util.PlayState;
 import kglog.Logger;
+import flixel.FlxSprite;
 
 /**
  * ...
@@ -13,7 +14,7 @@ class PlayStateSinglePlayer extends PlayState
 	public static var stateType:Int;
 
 	private static var map = {};
-	
+
 	private static var baseTile = new FlxSprite();
 	// the coordinates of a tile must be 8x the coordinates on the map data
 
