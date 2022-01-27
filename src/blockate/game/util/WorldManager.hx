@@ -29,4 +29,9 @@ class WorldManager
 		FlxG.switchState(new PlayStateSinglePlayer(path));
 	}
 
+	public static function initWorlds()
+	{
+
+	}
+
 }
