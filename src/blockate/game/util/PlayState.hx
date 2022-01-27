@@ -8,7 +8,7 @@ import kglog.Logger;
  */
 class PlayState extends FlxState
 {
-	public static var stateType:PlayStateType;
+	public static var stateType:Int;
 
 	public override function create()
 	{
@@ -26,10 +26,4 @@ class PlayState extends FlxState
 
 		Logger.simpleLog("Loading base play state");
 	}
-}
-
-extern enum PlayStateType
-{
-	SINGLEPLAYER;
-	MULTIPLAYER;
 }
