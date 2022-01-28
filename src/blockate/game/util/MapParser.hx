@@ -20,7 +20,7 @@ class MapParser
 		return File.getContent(path);
 	}
 
-	public static function getJsonData(path:String):String
+	public static function getJsonData(path:String):{}
 	{
 		var content = File.getContent(path);
 
