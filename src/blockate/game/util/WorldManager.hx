@@ -71,5 +71,10 @@ class WorldManager
 		File.saveContent(s6p, jTemplate);
 		File.saveContent(s7p, jTemplate);
 	}
+	
+	public static function checkWorlds() {
+		// work on this later
+		if (!FileSystem.exists()) {}
+	}
 
 }
