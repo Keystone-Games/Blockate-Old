@@ -1,9 +1,11 @@
 package blockate.game.util;
 import blockate.game.ui.states.world.PlayStateSinglePlayer;
 import flixel.FlxG;
+import haxe.Json;
 import haxe.io.Path;
 import kglog.Logger;
 import lime.system.System;
+import sys.io.File;
 
 /**
  * ...
@@ -57,6 +59,17 @@ class WorldManager
 
 			map: {}
 		};
+		
+		var jTemplate = Json.stringify(template);
+		
+		File.saveContent(s0p, jTemplate);
+		File.saveContent(s1p, jTemplate);
+		File.saveContent(s2p, jTemplate);
+		File.saveContent(s3p, jTemplate);
+		File.saveContent(s4p, jTemplate);
+		File.saveContent(s5p, jTemplate);
+		File.saveContent(s6p, jTemplate);
+		File.saveContent(s7p, jTemplate);
 	}
 
 }
