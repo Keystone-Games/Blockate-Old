@@ -73,8 +73,11 @@ class WorldManager
 	}
 	
 	public static function checkWorlds() {
+		var s0p = Path.join([System.applicationStorageDirectory, "slot0.json"]);
 		// work on this later
-		if (!FileSystem.exists()) {}
+		if (!FileSystem.exists(s0p)) {
+			initWorlds();
+		}
 	}
 
 }
