@@ -4,6 +4,7 @@ import flixel.FlxG;
 import haxe.io.Path;
 import kglog.Logger;
 import lime.system.System;
+import sys.io.File;
 
 /**
  * ...
@@ -31,7 +32,14 @@ class WorldManager
 
 	public static function initWorlds()
 	{
-
+		var s1p = Path.join([System.applicationStorageDirectory, "slot1.json"]);
+		var s2p = Path.join([System.applicationStorageDirectory, "slot2.json"]);
+		var s3p = Path.join([System.applicationStorageDirectory, "slot3.json"]);
+		var s4p = Path.join([System.applicationStorageDirectory, "slot4.json"]);
+		var s5p = Path.join([System.applicationStorageDirectory, "slot5.json"]);
+		var s6p = Path.join([System.applicationStorageDirectory, "slot6.json"]);
+		var s7p = Path.join([System.applicationStorageDirectory, "slot7.json"]);
+		var s8p = Path.join([System.applicationStorageDirectory, "slot8.json"]);
 	}
 
 }
