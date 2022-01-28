@@ -22,6 +22,8 @@ class MapParser
 
 	public static function getJsonData(path:String):{}
 	{
+		WorldManager.checkWorlds();
+		
 		var content = File.getContent(path);
 
 		var json = Json.parse(content);
