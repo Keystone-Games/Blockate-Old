@@ -31,7 +31,7 @@ class MapParser
 		return json;
 	}
 
-	public static function getBlock(x:Int, y:Int, z:Int, path:String)
+	public static function getBlock(x:Int, y:Int, z:Int, path:String):{}
 	{
 		var world = getJsonData(path);
 
