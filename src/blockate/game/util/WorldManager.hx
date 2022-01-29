@@ -6,6 +6,7 @@ import haxe.io.Path;
 import kglog.Logger;
 import lime.system.System;
 import sys.io.File;
+import sys.FileSystem;
 
 /**
  * ...
@@ -44,7 +45,7 @@ class WorldManager
 
 		var template =
 		{
-			status: "empty",
+			status: 0,
 
 			player: {
 				"username": {
