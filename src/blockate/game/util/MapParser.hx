@@ -20,7 +20,7 @@ class MapParser
 		return File.getContent(path);
 	}
 
-	public static function getJsonData(path:String):Json
+	public static function getJsonData(path:String):{}
 	{
 		WorldManager.checkWorlds();
 
