@@ -354,3 +354,4 @@ MigrationBackup/
 *.hxproj
 *.hxml
 bin/
+hxformat.json
