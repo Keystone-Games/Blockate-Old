@@ -16,7 +16,9 @@ class PlayStateSinglePlayer extends PlayState
 	private static var map = {};
 
 	private static var baseTile = new FlxSprite();
-	// the coordinates of a tile must be 8x the coordinates on the map data
+	
+	
+	private static var cm:Int;
 
 	public function new(worldFile:String)
 	{
