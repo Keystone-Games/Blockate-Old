@@ -20,7 +20,7 @@ class MapParser
 		return File.getContent(path);
 	}
 
-	public static function getJsonData(path:String):{}
+	public static function getJsonData(path:String):Array<String, Float>
 	{
 		WorldManager.checkWorlds();
 
@@ -36,7 +36,7 @@ class MapParser
 		var world = getJsonData(path);
 
 		Logger.simpleLog(world);
-		var block = world["map"][x][y][z];
+		var block = world[1][x][y][z];
 		return block;
 	}
 
