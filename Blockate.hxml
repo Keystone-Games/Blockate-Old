@@ -1,5 +1,5 @@
 
---cmd make testbuild
+--cmd build debug winnt
 
 -cp src/
 
