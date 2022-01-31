@@ -1,5 +1,7 @@
 @echo off
 
+echo Use the new build.bat instead of this
+
 if %1==testbuild (
     lime test cpp -debug
 )
