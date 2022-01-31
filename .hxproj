@@ -24,7 +24,7 @@
     <option noInlineOnDebug="False" />
     <option mainClass="blockate.Main" />
     <option enabledebug="False" />
-    <option additional="--cmd make testbuild" />
+    <option additional="--cmd build debug winnt" />
   </build>
   <!-- haxelib libraries -->
   <haxelib>
