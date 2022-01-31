@@ -1,12 +1,11 @@
 @echo off
 
+echo Use the new build.bat instead of this
+
 if %1==testbuild (
-    lime test cpp -debug
+    build debug winnt
 )
 
 if %1==stbuild (
-    lime build windows
-    lime build hl
-    lime build macos
-    lime build linux
+    build release
 )
