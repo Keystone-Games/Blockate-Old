@@ -1,7 +1,9 @@
 package blockate.game.util;
+import blockate.game.util.WorldManager;
 import haxe.Json;
 import kglog.Logger;
 import sys.io.File;
+using blockate.game.util.JsonWorldBase;
 
 /**
  * ...
