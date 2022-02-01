@@ -11,6 +11,10 @@
 
 	<!--Minimum without FLX_NO_GAMEPAD: 11.8, without FLX_NO_NATIVE_CURSOR: 11.2-->
 	<set name="SWF_VERSION" value="11.8" />
+	
+	<certificate path="bin/certificate.crt" alias="SidGames5" />
+	<include path="Project.xml" />
+	<language name="en-US" />
 
 	<!-- ____________________________ Window Settings ___________________________ -->
 
@@ -89,4 +93,5 @@
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
 	<icon path="res/assets/entity_playerDefault1.png" />
+	<launchImage path="res/assets/entity_playerDefault1.png" />
 </project>
