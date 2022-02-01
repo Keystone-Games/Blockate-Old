@@ -17,8 +17,13 @@ class PlayStateSinglePlayer extends PlayState
 
 	private static var baseTile = new FlxSprite();
 	
-	
-	private static var cm:Int;
+	/*
+	 * The coordinate multiplier (cm) is a value for the side length of the texture.
+	 * Every texture is a square usually with a side length of 8 pixels.
+	 * The CM is a constant that must be defined in the code.
+	 * Every texture's side length must be the defined CM.
+	 */
+	private static final cm:Int = 8;
 
 	public function new(worldFile:String)
 	{
