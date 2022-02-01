@@ -45,6 +45,9 @@ class Init
 		if (Reference.debug) {
 			Reference.FULLSCREEN = false;
 		}
+		
+		Logger.simpleLog("Starting Blockate " + Reference.APP_VERSION.major + "." + Reference.APP_VERSION.minor + "." + Reference.APP_VERSION.patch + Reference.APP_VERSION.state_letter + Reference.APP_VERSION.build);
+		
 		postInit(InitialisationArgs);
 	}
 
