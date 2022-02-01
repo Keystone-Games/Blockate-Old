@@ -8,8 +8,14 @@ class Reference
 {
 	public static final APP_NAME:String = "Blockate";
 	public static final APP_ID:String = "blockate";
-	public static final APP_VERSION:String = "0.0.0";
-	public static final APP_VERSION_STATE:String = "alpha";
+	public static final APP_VERSION = {
+		major: 0,
+		minor: 0,
+		patch: 0,
+		build: 0,
+		state: "alpha",
+		state_letter: "a"
+	};
 
 	public static final CFR:Int = 1000;
 
