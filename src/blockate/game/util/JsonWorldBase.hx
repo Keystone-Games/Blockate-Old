@@ -20,10 +20,8 @@ typedef World =
 	var metadata:Array<Int>;
 
 	/*
-	 * var player:
-	{
-		"player0":{pos:Array<Int>,inv:[]}
-	};*/
+	 * var player:{"player0":{pos:Array<Int>,inv:[]}};
+	 */
 	var player:{};
 	
 	var map:{[[[]]]};
