@@ -58,7 +58,7 @@ class WorldManager
 				}
 			},
 
-			map: {}
+			map: []
 		};
 		
 		var jTemplate = Json.stringify(template);
