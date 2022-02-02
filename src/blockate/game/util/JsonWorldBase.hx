@@ -24,5 +24,5 @@ typedef World =
 	 */
 	var player:{};
 	
-	var map:{[[[]]]};
+	var map:Array<Array<TileBase>>;
 }
