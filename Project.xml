@@ -13,7 +13,6 @@
 	<set name="SWF_VERSION" value="11.8" />
 	
 	<certificate path="bin/certificate.crt" alias="SidGames5" />
-	<include path="Project.xml" />
 	<language name="en-US" />
 
 	<!-- ____________________________ Window Settings ___________________________ -->
