@@ -1,5 +1,7 @@
 package blockate.game.util;
 
+import blockate.game.registry.tile.TileBase;
+
 typedef World =
 {
 	/*
@@ -24,5 +26,5 @@ typedef World =
 	 */
 	var player:{};
 	
-	var map:Array<Array<TileBase>>;
+	var map:Array<Array<Array<TileBase>>>;
 }
