@@ -8,7 +8,11 @@ import flixel.system.FlxAssets;
  */
 interface TileBase
 {
-	public static var texture:FlxAssets.FlxGrapicAsset;
+	/*
+	 * The texture of the tile.
+	 * type: FlxGraphicAsset
+	 */
+	public var texture:String;
 
-	public static var type:TileType;
+	public var type:TileType;
 }
