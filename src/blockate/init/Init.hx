@@ -36,6 +36,10 @@ class Init
 				break;
 			}
 		}
+		
+		#if debug
+		Reference.debug = true;
+		#end
 
 		init(PreInitialisationArgs);
 	}
