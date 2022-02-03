@@ -1,12 +1,13 @@
 package blockate.game.registry.tile;
 
+import blockate.game.registry.RegistryBase;
 import blockate.game.util.TileType;
 import flixel.system.FlxAssets;
 
 /**
  * @author SidGames5
  */
-interface TileBase
+interface TileBase extends RegistryBase
 {
 	/*
 	 * The texture of the tile.
