@@ -1,6 +1,6 @@
 package blockate.game.ui.states.world;
 
-import blockate.game.util.WorldManager;
+import blockate.game.util.world.WorldManager;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.text.FlxText;
