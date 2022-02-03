@@ -3,7 +3,7 @@ import blockate.game.util.world.WorldManager;
 import haxe.Json;
 import kglog.Logger;
 import sys.io.File;
-using blockate.game.util.JsonWorldBase;
+using blockate.game.util.world.JsonWorldBase;
 
 /**
  * ...
