@@ -1,5 +1,6 @@
 package blockate.game.registry.item;
+import blockate.game.registry.RegistryBase;
 
-class Item {
-  public static final list = {};
+interface Item extends RegistryBase {
+  
 }
