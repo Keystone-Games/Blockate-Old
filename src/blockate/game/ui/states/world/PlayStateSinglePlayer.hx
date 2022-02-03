@@ -1,6 +1,6 @@
 package blockate.game.ui.states.world;
 
-import blockate.game.util.MapParser;
+import blockate.game.util.world.MapParser;
 import blockate.game.util.PlayState;
 import kglog.Logger;
 import flixel.FlxSprite;
