@@ -7,7 +7,7 @@ import flixel.system.FlxAssets;
 /**
  * @author SidGames5
  */
-interface TileBase extends RegistryBase
+interface Tile extends RegistryBase
 {
 	/*
 	 * The texture of the tile.
