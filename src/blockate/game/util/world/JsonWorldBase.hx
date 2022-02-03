@@ -20,6 +20,8 @@ typedef World =
 		this is a boolean value expressed in an integer
 	 */
 	var metadata:Array<Int>;
+	
+	var status:Int;
 
 	/*
 	 * var player:{"player0":{pos:Array<Int>,inv:[]}};
