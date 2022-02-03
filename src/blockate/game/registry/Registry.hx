@@ -18,6 +18,14 @@ class Registry
 					item: args.defenition
 				};
 				break;
+				
+			case "tile":
+				tile[Std.string(args.number) + ":" + Std.string(args.meta)] =
+				{
+					id: args.id,
+					tile: args.defenition
+				};
+				break;
 		}
 	}
 }
