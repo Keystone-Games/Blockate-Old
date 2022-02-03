@@ -34,6 +34,9 @@ class PlayStateSinglePlayer extends PlayState
 		stateType = 0;
 
 		world = MapParser.getJsonData(worldFile);
+		if (world.status == 0) {
+			// generate world
+		}
 	}
 
 	public override function create()
