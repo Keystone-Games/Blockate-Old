@@ -18,7 +18,7 @@ class WorldGenerator
 
 	}
 
-	public static function generateHeightMap(maxX:Int, maxY:Int, maxZ:Int, intensity:Int)
+	public static function generateHeightMap(maxX:Int, maxY:Int, maxZ:Int, intensity:Float)
 	{
 		for (x in 0...maxX)
 		{
@@ -39,6 +39,10 @@ class WorldGenerator
 	public static function generateFoliageMap()
 	{
 		return noiseMap;
+	}
+	
+	public static function generateFullMap(maxX:Int, maxY:Int, maxZ:Int, heightIntensity:Float) {
+		return generateHeightMap(), generateNoiseMap(), generateFoliageMap();
 	}
 
 }
