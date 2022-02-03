@@ -39,7 +39,7 @@
 
 	<haxelib name="flixel" />
 
-	<haxelib name="random" />
+	<haxelib name="Random" />
 
 	<haxelib name="Console.hx" />
 
