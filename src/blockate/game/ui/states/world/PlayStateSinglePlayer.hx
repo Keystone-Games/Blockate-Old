@@ -13,7 +13,7 @@ class PlayStateSinglePlayer extends PlayState
 {
 	public static var stateType:Int;
 
-	private static var map = {};
+	private static var world = {};
 
 	private static var baseTile = new FlxSprite();
 	
@@ -33,7 +33,7 @@ class PlayStateSinglePlayer extends PlayState
 		Logger.simpleLog("Defining state type");
 		stateType = 0;
 
-		map = MapParser.getJsonData(worldFile);
+		world = MapParser.getJsonData(worldFile);
 	}
 
 	public override function create()
