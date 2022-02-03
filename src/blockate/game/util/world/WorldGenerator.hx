@@ -38,7 +38,7 @@ class WorldGenerator
 
 	public static function generateFoliageMap()
 	{
-		return noiseMap;
+		return foliageMap;
 	}
 	
 	public static function generateFullMap(maxX:Int, maxY:Int, maxZ:Int, heightIntensity:Float) {
