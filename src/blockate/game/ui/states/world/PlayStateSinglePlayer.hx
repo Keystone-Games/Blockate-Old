@@ -4,6 +4,7 @@ import blockate.game.util.world.MapParser;
 import blockate.game.util.PlayState;
 import kglog.Logger;
 import flixel.FlxSprite;
+import blockate.game.util.world.JsonWorldBase.World;
 
 /**
  * ...
@@ -13,7 +14,7 @@ class PlayStateSinglePlayer extends PlayState
 {
 	public static var stateType:Int;
 
-	private static var world = {};
+	private static var world:World;
 
 	private static var baseTile = new FlxSprite();
 	
