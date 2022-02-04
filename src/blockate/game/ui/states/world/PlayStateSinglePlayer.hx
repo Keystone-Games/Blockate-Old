@@ -43,6 +43,8 @@ class PlayStateSinglePlayer extends PlayState
 	public override function create()
 	{
 		super.create();
+		
+		
 	}
 	public override function update(dt:Float)
 	{
