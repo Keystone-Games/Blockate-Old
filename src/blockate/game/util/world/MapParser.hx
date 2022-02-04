@@ -41,5 +41,30 @@ class MapParser
 		var block = world.map[x][y][z];
 		return block;
 	}
+	
+	
+	
+	public static function parseMap(type:Int, map:World) {
+		/* map types are an integer value
+		 * type 0 - Height map
+		 * type 1 - Noise map
+		 * type 2 - Foliage map
+		 */
+		
+		if (type < 0 || type > 2) {
+			return "error";
+		}
+		
+		switch (type) {
+			case 0:
+				break;
+			
+			case 1:
+				break;
+			
+			case 2:
+				break;
+		}
+	}
 
 }
