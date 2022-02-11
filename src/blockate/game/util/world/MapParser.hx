@@ -44,12 +44,14 @@ class MapParser
 	
 	
 	
-	public static function parseMap(type:Int, map:World) {
+	public static function parseMap(type:Int, size:Int, map:Dynamic, x:Int, y:Int, ?z:Int) {
 		/* map types are an integer value
 		 * type 0 - Height map
 		 * type 1 - Noise map
 		 * type 2 - Foliage map
 		 */
+		
+		var r;
 		
 		if (type < 0 || type > 2) {
 			return "error";
@@ -57,6 +59,7 @@ class MapParser
 		
 		switch (type) {
 			case 0:
+				r = map[x][y];
 				break;
 			
 			case 1:
@@ -65,6 +68,8 @@ class MapParser
 			case 2:
 				break;
 		}
+		
+		return r;
 	}
 
 }
